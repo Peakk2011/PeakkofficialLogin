@@ -1,0 +1,299 @@
+* {
+    font-family: Sfth !important;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Reset some default browser styles */
+body,
+h1,
+h2,
+p,
+form,
+ul {
+    margin: 0;
+    padding: 0;
+    font-family: Sfth !important;
+}
+
+@font-face {
+    font-family: Sfpro;
+    src: url(../Font/SFPRODISPLAYMEDIUM.OTF.OTF);
+}
+
+@font-face {
+    font-family: lineseed;
+    src: url(../Font/LINESeedSansTH_Rg.ttf);
+}
+
+@font-face {
+    font-family: SFth;
+    src: url(../Font/SFThonburi-Regular.ttf);
+}
+
+@font-face {
+    font-family: SFthBd;
+    src: url(../Font/SFThonburi-Bold.ttf);
+}
+
+
+/* Set some basic body styling */
+body {
+    font-family: Sfpro;
+    line-height: 1.6;
+    /* background-color: #f0f2f5; */
+    background-color: rgba(255, 255, 233, 0.45);
+    color: #333;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+h1 {
+    font-weight: 500;
+    font-family: lineseed;
+    letter-spacing: -0.25px;
+    color: #000;
+}
+
+.container {
+    background: transparent;
+    padding: 30px;
+    border-radius: 10px;
+    width: 370px;
+    text-align: center;
+}
+
+/* Styling for form labels and inputs */
+form label {
+    display: block;
+    margin-bottom: 8px;
+    text-align: left;
+    font-weight: 300;
+    font-family: lineseed;
+}
+
+form input[type="text"],
+form input[type="password"] {
+    width: 100%;
+    padding: 15px;
+    margin-bottom: 20px;
+    border: 1px solid #ededed;
+    border-radius: 5px;
+    box-sizing: border-box;
+    user-select: none;
+    -drag: none;
+    -moz-user-select: none;
+    -webkit-user-drag: none;
+    -webkit-user-select: none;
+    font-family: SFth;
+    letter-spacing: -0.5px;
+    font-size: 17px;
+    background-color: rgba(255, 255, 233, 0.45);
+}
+
+
+form input[type="text"]:focus,
+form input[type="password"]:focus {
+    outline: none;
+    border: solid 1px #ccc;
+}
+
+form input[type="submit"] {
+    background-color: #000;
+    color: #ffffe9;
+    padding: 12px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    /* transition: background-color 0.3s ease; */
+    display: block;
+    width: 100%;
+    margin: 1rem 0px;
+    margin-bottom: 2rem;
+    font-family: lineseed;
+    font-size: 18px;
+}
+
+#LineloginPeakkofficial {
+    background-color: #000;
+    color: #ffffe9;
+    padding: 8px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    /* transition: background-color 0.3s ease; */
+    display: block;
+    width: 100%;
+    margin: 1rem 0px;
+    margin-bottom: 2.25rem;
+    font-family: lineseed;
+    font-size: 18px;
+    text-decoration: none;
+}
+
+form input[type="submit"]:hover {
+    background-color: #161616;
+}
+
+#LineloginPeakkofficial:hover {
+    filter: brightness(70%);
+}
+
+/* Styling for error messages */
+.error {
+    color: #e45a42;
+    margin-top: 10px;
+    margin-bottom: 22.5px;
+    font-family: Sfth;
+}
+
+/* Styling for link to register */
+p a {
+    color: #000;
+    text-decoration: none;
+    font-weight: 600;
+    font-family: SFthBd;
+}
+
+p a:hover {
+    text-decoration: underline;
+}
+
+/* Styling for recent accounts */
+.container h2 {
+    margin-top: 20px;
+    font-size: 26px;
+    font-weight: 400;
+    margin-bottom: 1rem;
+}
+
+ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+ul li {
+    background: #f9f9f9;
+    margin: 5px 0;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+ul li a {
+    text-decoration: none;
+    color: #007bff;
+    font-weight: bold;
+}
+
+ul li:hover {
+    background-color: #e9ecef;
+}
+
+ul li a:hover {
+    text-decoration: underline;
+}
+
+.dragaable {
+    position: fixed;
+    height: 55px;
+    width: 100%;
+    -webkit-app-region: drag;
+    background-color: transparent;
+    top: 0;
+}
+
+.dragaable hr {
+    width: 70px;
+    border-radius: 5px;
+    border: solid 1.5px #4a4a4a;
+    position: fixed;
+    top: 27px;
+    left: 50%;
+    transform: translate(-50%);
+}
+
+@media (prefers-color-scheme: dark) {
+    body {
+        color: #eee;
+        background: #060606;
+    }
+
+    body a {
+        color: #8ab5f9;
+    }
+
+    .container h1 {
+        color: #ffffe9;
+    }
+
+    .container {
+        background-color: #060606;
+        outline: solid 1px #222;
+    }
+
+    form input[type="text"],
+    form input[type="password"] {
+        border: solid 1px #222;
+        /* background-color: #080808; */
+        background-color: transparent;
+    }
+
+    form label {
+        color: #6a6a6a;
+    }
+
+    form input[type="text"]:focus,
+    form input[type="password"]:focus {
+        outline: none;
+        border: solid 1px #4a4a4a;
+    }
+
+    form input[type="submit"] {
+        background-color: #ffffe9;
+        color: #000;
+    }
+
+    #LineloginPeakkofficial {
+        background-color: #ffffe9;
+        color: #000;
+    }
+
+    form input[type="submit"]:hover {
+        filter: brightness(80%);
+        background-color: #ffffe9;
+    }
+
+    p a {
+        color: #ffffe9;
+    }
+
+    .error {
+        color: #ecb1a7;
+    }
+
+}
+
+.container h1 {
+    margin-bottom: 3rem;
+    font-size: 34px;
+    margin-top: 1rem;
+}
+
+@media (prefers-reduced-transparency) {
+    
+    body {
+        background-color: #0f0f0f;
+    }
+
+    .dragaable {
+        background-color: #0f0f0f;
+    }
+
+}
