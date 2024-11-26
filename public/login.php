@@ -14,16 +14,18 @@ $error = '';
 if ($_SERVER['REQUEST_METHOD'] == 'POST' && isset($_POST['username']) && isset($_POST['password'])) {
     $username = $_POST['username'];
     $password = $_POST['password'];
-    $stmt = $mysqli->prepare("SELECT password FROM users WHERE username = ?");
+
+    $stmt = $mysqli->prepare("SELECT id, password FROM users WHERE username = ?");
     $stmt->bind_param("s", $username);
     $stmt->execute();
-    $stmt->bind_result($hash);
+    $stmt->bind_result($user_id, $hash);
     $stmt->fetch();
     $stmt->close();
 
     if ($hash && verifyPassword($password, $hash)) {
         $_SESSION['logged_in'] = true;
         $_SESSION['username'] = $username;
+        $_SESSION['user_id'] = $user_id;
 
         // ตั้งคุกกี้เพื่อจำสถานะการล็อกอิน
         setcookie("logged_in", true, time() + (86400 * 30), "/");
@@ -60,7 +62,7 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST' && isset($_POST['username']) && isset($
         </form>
         <p>Don't have an account? <a href="register.php">Register here</a></p>
         <?php if ($error) { ?>
-            <p class="error"><?php echo $error; ?></p>
+            <p class="error"><?php echo htmlspecialchars($error); ?></p>
         <?php } ?>
 
         <?php
