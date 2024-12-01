@@ -125,7 +125,7 @@ $result = $stmt->get_result();
                             name="cash-outline"></ion-icon>จ้างงาน</a>
                 </li>
                 <li><a href="#"><ion-icon
-                            name="chevron-forward-outline"></ion-icon>ติดต่อพวกเรา</a></li>
+                            name="chevvercelron-forward-outline"></ion-icon>ติดต่อพวกเรา</a></li>
                 <li><a href="javascript:void(0)" onclick="Settings()"><ion-icon name="settings-outline"></ion-icon>การตั้งค่า</a></li>
                 </a></li>
                 <li><a href="./logout.php"><ion-icon name="exit-outline"></ion-icon>ออกจากระบบ</a></li>
