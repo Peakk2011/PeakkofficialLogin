@@ -5,7 +5,8 @@
         "src": "public/index.php",
         "use": "vercel-php@0.5.2",
         "config": {
-          "distDir": "."
+          "distDir": ".",
+          "runtime": "nodejs18.x"
         }
       }
     ],
