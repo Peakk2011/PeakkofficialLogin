@@ -2,12 +2,6 @@
   "name": "peakkofficialapps",
   "version": "1.0.0",
   "scripts": {
-    "build": "cp -r public/* .",
-    "start": "vercel dev"
-  },
-  "main": "index.js",
-  "keywords": [],
-  "author": "",
-  "license": "ISC",
-  "description": ""
+    "build": "cp -r public/* ."
+  }
 }

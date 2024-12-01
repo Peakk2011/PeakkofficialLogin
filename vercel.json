@@ -1,20 +1,7 @@
 {
     "version": 2,
-    "builds": [
-      {
-        "src": "public/index.php",
-        "use": "vercel-php@0.5.2",
-        "config": {
-          "distDir": ".",
-          "runtime": "nodejs18.x"
-        }
-      }
-    ],
     "routes": [
-      {
-        "src": "/(.*)",
-        "dest": "public/$1"
-      }
+      { "src": "/(.*)", "dest": "/index.html" }
     ]
   }
   
