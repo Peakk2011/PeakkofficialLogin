@@ -1,0 +1,7 @@
+{
+  "name": "Peakkofficialapps",
+  "version": "1.0.0",
+  "scripts": {
+    "build": "cp -r public/* ."
+  }
+}
