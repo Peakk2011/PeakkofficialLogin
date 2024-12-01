@@ -128,6 +128,7 @@ $result = $stmt->get_result();
                             name="chevron-forward-outline"></ion-icon>ติดต่อพวกเรา</a></li>
                 <li><a href="javascript:void(0)" onclick="Settings()"><ion-icon name="settings-outline"></ion-icon>การตั้งค่า</a></li>
                 </a></li>
+                <li><a href="./logout.php"><ion-icon name="exit-outline"></ion-icon>ออกจากระบบ</a></li>
             </div>
             <div class="bottomusername">
                 <ion-icon name="person-sharp"></ion-icon>
